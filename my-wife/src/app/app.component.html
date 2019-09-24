@@ -1,0 +1,46 @@
+<div id="wrapper">
+
+  <!-- Header -->
+    <header id="header">
+      <div class="logo">
+        <span class="icon fa-diamond"></span>
+      </div>
+      <div class="content">
+        <div class="inner">
+          <h1>Hey Angel</h1>
+          <p>You are the leeniest of all time.</p>
+          <p>Love you more than anything</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <button mat-raised-button (click)="openBottomSheet()">Get Started</button>
+          </li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!--<li><a href="#elements">Elements</a></li>-->
+        </ul>
+      </nav>
+    </header>
+
+  
+
+  <!-- Footer -->
+    <footer id="footer">
+      <p class="copyright">&copy; DeLavalles</p>
+    </footer>
+
+</div>
+
+<!-- BG -->
+<div id="bg"></div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<router-outlet></router-outlet>
