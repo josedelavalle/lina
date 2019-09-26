@@ -5,11 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
-import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
+import { BottomSheetComponent } from './components/bottom-sheet/bottom-sheet.component';
+import { HeroTextComponent } from './components/hero-text/hero-text.component';
+import { StepServiceService } from './services/step-service.service'
 @NgModule({
   declarations: [
     AppComponent,
-    BottomSheetComponent
+    BottomSheetComponent,
+    HeroTextComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,7 @@ import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
     FormsModule
   ],
   entryComponents: [BottomSheetComponent],
-  providers: [],
+  providers: [StepServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

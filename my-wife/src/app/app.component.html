@@ -5,8 +5,11 @@
       <div class="logo">
         <span class="icon fa-diamond"></span>
       </div>
-      <div class="content">
-        <div class="inner">
+      <div class="content" [@slideInOut]="helpMenuOpen">
+        <div class="inner" *ngIf="showReveal">  
+          <app-hero-text *ngIf="showReveal"></app-hero-text>
+        </div>
+        <div class="inner" *ngIf="!showReveal">
           <h1>Hey Angel</h1>
           <p>You are the leeniest of all time.</p>
           <p>Love you more than anything</p>
@@ -14,13 +17,10 @@
       </div>
       <nav>
         <ul>
-          <li>
-            <button mat-raised-button (click)="openBottomSheet()">Get Started</button>
-          </li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <!--<li><a href="#elements">Elements</a></li>-->
+          <li><button *ngIf="isVisible(1)" (click)="openBottomSheet(1)">Number One</button></li>
+          <li><button *ngIf="isVisible(2)" (click)="openBottomSheet(2)">Number Two</button></li>
+          <li><button *ngIf="isVisible(3)" (click)="openBottomSheet(3)">Number Three</button></li>
+          <li><button *ngIf="isVisible(4)" (click)="openBottomSheet(4)">Number Four</button></li>
         </ul>
       </nav>
     </header>
