@@ -49,11 +49,11 @@ export class AppComponent {
       });
     }, 1000);
     
-    console.log('menuitems = ', this.menuItems)
+    //console.log('menuitems = ', this.menuItems)
     
     if (ndx == 4) {
       setTimeout(function() {
-        $this.showReveal = !$this.showReveal;
+        $this.showReveal = true;
       }, 1000)
     }
   }

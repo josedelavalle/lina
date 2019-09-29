@@ -1,7 +1,11 @@
 .bottom-sheet {
     min-height: 50vh;
+    height: 100%;
     //width: 100vw;
-
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     h1 {
         font-size: 2em;
         color: rgba(0,0,0,.87);
@@ -21,11 +25,11 @@
 
 .my-text-container {
     position: relative;
-    margin: 58px 50px;
+    //margin: 58px 50px;
     height: 49vh;
     // background: rgba(255, 255, 255, 0.9);
-    border-radius: 5px;
-    border: #ddd solid 1px;
+    //border-radius: 5px;
+    //border: #ddd solid 1px;
 }
 
 .my-text {
@@ -33,7 +37,7 @@
     text-align: center;
     font-weight: 500;
     font-family: 'Open Sans';
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 2em;
     top: 50%;
     left: 50%;
@@ -45,8 +49,10 @@
 }   
 
 .inner-text {
-    background: rgba(255, 255, 255, 0.8);
-    height: 200px;
+    background: rgba(0, 0, 0, 0.2);
+    text-shadow: 3px 1px 5px #020101;
+    height: 100%;
+    color: white;
     position: absolute;
     bottom: -83px;
     width: 100%;

@@ -1,10 +1,10 @@
-<div class="bottom-sheet">
+<div class="bottom-sheet" [ngStyle]="{'background-image': 'url(../../assets/images/' + picNum + '.jpg)'}">
     <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
         
         <div class="my-text-container">
             
             <div class="my-text">
-                <img src="../../assets/images/us.jpg" />
+                
                 <div class="inner-text">{{getTitle()}}</div>
 
             </div>
